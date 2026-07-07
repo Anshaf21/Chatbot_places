@@ -2,6 +2,9 @@ import streamlit as st
 from google import genai
 from streamlit_js_eval import get_geolocation
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 # ----------------------------
 # Streamlit Page Configuration
 # ----------------------------
@@ -31,10 +34,11 @@ with loc_col2:
 # Load Knowledge Base
 # ----------------------------
 try:
-    with open("requirements.txt", "r", encoding="utf-8") as f:
+    with open("place.txt", "r", encoding="utf-8") as f:
         kb = f.read()
 except FileNotFoundError:
     kb = "No tourist information available."
+
 
 # ----------------------------
 # Gemini API Key
