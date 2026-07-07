@@ -43,7 +43,7 @@ except FileNotFoundError:
 # ----------------------------
 # Gemini API Key
 # ----------------------------
-API_KEY = api_key = os.environ.get("GOOGLE_API_KEY")   # Replace with your API key
+API_KEY = os.environ.get("GOOGLE_API_KEY")   # Replace with your API key
 
 MODEL = "gemini-2.5-flash"
 
