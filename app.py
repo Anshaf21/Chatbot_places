@@ -66,7 +66,7 @@ Use the following tourist information when relevant:
 # Initialize Client
 # ----------------------------
 if "client" not in st.session_state:
-    st.session_state.client = genai.Client(api_key=API_KEY)
+    st.session_state.client = genai.Client(API_KEY)
 
 # ----------------------------
 # Initialize Chat
